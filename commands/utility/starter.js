@@ -1,5 +1,3 @@
-const { execute } = require('./dm');
-
 class starter {
 	constructor(interaction) {
 		this.interaction = interaction;
@@ -16,7 +14,6 @@ class starter {
 			this.result = 'Invalid expression';
 			console.error('Error evaluating expression:', error);
 		}
-		execute();
 	}
 
 	async execute() {
