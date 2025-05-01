@@ -18,7 +18,7 @@ class starter {
 
 	async execute() {
 		await this.interaction.reply(`The result is: ${this.result}`);
-		await this.interaction.replay(`Your id: ${this.interaction.user.id}`);
+		this.interaction.replay(`Your id: ${this.interaction.user.id}`);
 	}
 }
 
