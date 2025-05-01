@@ -14,6 +14,6 @@ module.exports = {
 			catch (error) {
 				console.error('Failed to delete message:', error);
 			}
-		}, 5 * 60 * 1000);
+		}, 1000);
 	},
 };
