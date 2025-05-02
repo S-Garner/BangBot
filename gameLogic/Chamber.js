@@ -1,5 +1,5 @@
 // const { Bullet } = require('./Bullet');
-const { Loader } = require('./Loader');
+const Loader = require('./Loader');
 
 class Chamber {
 	constructor(count) {

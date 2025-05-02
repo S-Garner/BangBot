@@ -1,4 +1,4 @@
-const { Bullet } = require('./Bullet');
+const Bullet = require('./Bullet');
 
 class Loader {
 	constructor(bCount) {
