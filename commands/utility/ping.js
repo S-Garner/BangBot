@@ -6,6 +6,7 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
 	async execute(interaction) {
-		await interaction.reply(`${new Chamber(5)}`);
+		this.chamber = new Chamber(5);
+		await interaction.reply(`${this.chamber}, ${this.chamber.getCount()}`);
 	},
 };

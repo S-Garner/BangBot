@@ -1,11 +1,16 @@
 class Player {
-	constructor(name, health) {
+	constructor(name, id, health) {
 		this.name = name;
 		this.health = health;
+		this.id = id;
 	}
 
 	getName() {
 		return this.name;
+	}
+
+	getId() {
+		return this.id;
 	}
 
 	getHealth() {
@@ -14,6 +19,7 @@ class Player {
 
 	setHealth(health) {
 		this.health += health;
+		return health;
 	}
 
 	isAlive() {
